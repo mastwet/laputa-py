@@ -1,0 +1,55 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source code
+*.py text diff=python
+*.pyw text diff=python
+*.pyc binary
+*.pyo binary
+
+# Configuration files
+*.toml text
+*.cfg text
+*.ini text
+*.yml text
+*.yaml text
+
+# Documentation
+*.md text diff=markdown
+*.rst text
+*.txt text
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+
+# Batch scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# JSON
+*.json text diff=json
+
+# XML
+*.xml text
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# Archives
+*.zip binary
+*.tar.gz binary
+*.tar.bz2 binary
+*.rar binary
+
+# Executables
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
