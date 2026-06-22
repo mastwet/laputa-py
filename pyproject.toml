@@ -14,6 +14,11 @@ dependencies = [
     "mempalace @ git+https://github.com/MemPalace/mempalace.git",
 ]
 
+[project.urls]
+Homepage = "https://github.com/mastwet/laputa-py"
+Repository = "https://github.com/mastwet/laputa-py"
+Issues = "https://github.com/mastwet/laputa-py/issues"
+
 [project.optional-dependencies]
 dev = [
     "pytest>=7.0",
