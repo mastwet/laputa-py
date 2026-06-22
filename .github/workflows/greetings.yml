@@ -1,0 +1,41 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: |
+          # Welcome to Laputa-Py! 🎉
+          
+          Thank you for opening your first issue! We appreciate your contribution.
+          
+          A maintainer will review your issue and get back to you as soon as possible.
+          
+          In the meantime, feel free to:
+          - Check out the [README](https://github.com/mastwet/laputa-py#readme) for project information
+          - Join the [Discussions](https://github.com/mastwet/laputa-py/discussions) for questions and help
+          - Browse existing issues to see if your issue has been reported
+          
+          Thank you for helping improve Laputa-Py! 🚀
+        pr-message: |
+          # Welcome to Laputa-Py! 🎉
+          
+          Thank you for opening your first pull request! We appreciate your contribution.
+          
+          A maintainer will review your PR and get back to you as soon as possible.
+          
+          In the meantime, please ensure:
+          - Your code follows the project's style guidelines
+          - You've added tests for new functionality
+          - All tests pass
+          - You've updated documentation if needed
+          
+          Thank you for helping improve Laputa-Py! 🚀
