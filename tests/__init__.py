@@ -1,0 +1,1 @@
+"""Laputa-Py tests."""
