@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions & Help
+    url: https://github.com/mastwet/laputa-py/discussions
+    about: Use GitHub Discussions for questions and help
+  - name: Documentation
+    url: https://github.com/mastwet/laputa-py#readme
+    about: Check the documentation for answers
