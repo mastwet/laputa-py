@@ -51,6 +51,10 @@ proposal = service.create_proposal(
 service.apply_proposal(proposal.id)
 ```
 
+## Design Documentation
+
+Detailed design documents (architecture baselines, research, PRD reconciliation, legacy lineage) are consolidated under [`docs/`](docs/README.md). The canonical versions remain in `morediva/`; `docs/` is for centralized reading and cross-project traceability. See [`docs/README.md`](docs/README.md) for the full index, reading paths, and timeline.
+
 ## Project Structure
 
 ```
@@ -69,6 +73,7 @@ laputa-py/
 │       ├── cli.py               # Command-line interface
 │       └── ...                  # Other modules
 ├── tests/                       # Test suite
+├── docs/                        # Design documents (consolidated from morediva/)
 ├── pyproject.toml               # Project configuration
 └── TODOLIST.md                  # Development roadmap
 ```
